@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Projects</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: #1a1a2e !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #00d4ff !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: #00b4d8 !important;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #00d4ff !important;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            margin-top: 5rem;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        h1 {
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: #00d4ff;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .cards-section {
+            margin: 5rem auto;
+            max-width: 1200px;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            color: #1a1a2e;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            color: #777;
+            font-size: 1rem;
+        }
+
+        .btn-card {
+            background: #00d4ff;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-card:hover {
+            background: #00b4d8;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">GitHub Projects</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">Despre
+                        Proiecte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project">Creează
+                        un Proiect</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project">Copiază
+                        un Proiect</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/migrating-from-projects-classic">Migrarea
+                        din Projects Classic</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">GitHub Projects - Ghiduri</h1>
+        <p class="text-center">Accesați documentațiile pentru mai multe informații despre cum să folosiți GitHub
+            Projects.</p>
+    </div>
+    <section class="cards-section">
+        <div class="row d-flex justify-content-center">
+            <div class="col mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title">Git Remote - W3Schools</h5>
+                    <p class="card-text">Învață cum să configurezi și să utilizezi un remote Git cu GitHub.</p>
+                    <a href="https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github"
+                        class="btn btn-card">Accesează</a>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title">GitHub Docs</h5>
+                    <p class="card-text">Documentația completă GitHub pentru toate funcționalitățile platformei.</p>
+                    <a href="https://docs.github.com/en" class="btn btn-card">Accesează</a>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title">Despre Projects</h5>
+                    <p class="card-text">Află totul despre GitHub Projects și cum să le folosești eficient.</p>
+                    <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects"
+                        class="btn btn-card">Accesează</a>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card p-4">
+                    <h5 class="card-title">GitHub Copilot</h5>
+                    <p class="card-text">Ghid pentru utilizarea GitHub Copilot și adresarea întrebărilor.</p>
+                    <a href="https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-github"
+                        class="btn btn-card">Accesează</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
